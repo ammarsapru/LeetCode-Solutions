@@ -1,0 +1,22 @@
+class Solution(object):
+    def removeDuplicates(self, nums): 
+        j = 0 
+        n=1
+        while n<=(len(nums)-1) and j<n:
+            if nums[j] == nums[n]:
+                n += 1
+            elif nums[j] != nums[n]:
+                nums[j+1] = nums[n]
+                j+=1
+                n+=1
+        return j+1
+
+                
+
+
+
+
+
+
+
+        
